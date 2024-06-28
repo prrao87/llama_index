@@ -1,6 +1,5 @@
-import warnings
 from typing import Any, List, Dict, Optional, Tuple
-import nest_asyncio
+
 import kuzu
 from llama_index.core.graph_stores.types import (
     PropertyGraphStore,
@@ -12,15 +11,10 @@ from llama_index.core.graph_stores.types import (
 )
 from llama_index.core.vector_stores.types import VectorStoreQuery
 from llama_index.core.graph_stores.utils import value_sanitize
-
 import utils
-
-warnings.filterwarnings("ignore")
 
 # Threshold for max number of returned triplets
 LIMIT = 10
-
-nest_asyncio.apply()
 
 
 class KuzuPropertyGraphStore(PropertyGraphStore):
