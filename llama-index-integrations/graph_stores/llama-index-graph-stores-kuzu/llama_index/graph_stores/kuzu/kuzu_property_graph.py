@@ -1,5 +1,5 @@
 import warnings
-from typing import Any, Literal, List, Dict, Optional, Tuple
+from typing import Any, List, Dict, Optional, Tuple
 import nest_asyncio
 import kuzu
 from llama_index.core.graph_stores.types import (
